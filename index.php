@@ -1,8 +1,20 @@
 <?php
+include './includes/Global.php';
+$title ="Controle De Estoque";
+include './template/header.php';
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+?>
 
+<form methord="post">
+    <div class="center">
+        Nome: <input type="text" nome="nome" />
+        Valor: <input type="text" nome="valor" />
+        Quantidade: <input type="text" nome="qtd" />
+        Data de Validade: <input type="text" nome="dtval" />
+        <input type="submit" nome="Cadastrar" />
+    </div>
+</form>
+
+ <?php 
+include './template/footer.php';
+?>
